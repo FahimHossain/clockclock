@@ -1,15 +1,15 @@
-## The clock clock
+## The Clock Clock
 ---
 by humans since 1982 
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/zbulAxkeMbo/0.jpg)](http://www.youtube.com/watch?v=zbulAxkeMbo "Video Title")
+[![IMAGE ALT TEXT](https://i.ibb.co/7dhL66jb/image.png)](https://youtu.be/VHBMX3pzgaY)
 
 ### Demo 
-[rahmonzoda.github.io/clockclock](http://rahmonzoda.github.io/clockclock)
+https://fahimhossain.github.io/clockclock/
 
 
 ### Clone
 ```sh
-$ git clone https://github.com/rahmonzoda/clockclock.git
+$ git clone https://github.com/FahimHossain/clockclock.git
 $ cd clockclock
 ```
