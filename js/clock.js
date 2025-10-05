@@ -73,11 +73,11 @@ var numeral = [
     ],
     [   // eight
         [3, 6],
-        [0, 4],
+        [0, 3],
         [0, 3],
 
         [6, 9],
-        [0, 8],
+        [0, 9],
         [0, 9]
     ],
     [   // nine
@@ -105,12 +105,12 @@ Clock.prototype.create = function () {
 
     this.frame = clock.rect( (this.x + 1), (this.y + 1), 60, 60, 0).attr({
         fill: "#fff",
-        stroke: "#000"
+ //     stroke: "#000" //Frame
     });
 
-    this.hours = clock.rect( (this.x + 30), (this.y + 10), 3, 20).attr({fill: "#333"});  
+    this.hours = clock.rect( (this.x + 30), (this.y + 10), 3, 25).attr({fill: "#333"});  
 
-    this.minutes = clock.rect( (this.x + 31), (this.y + 10), 3, 20).attr({fill: "#333"});
+    this.minutes = clock.rect( (this.x + 31), (this.y + 10), 3, 25).attr({fill: "#333"});
 
 
     this.middle = clock.circle( ( this.x + 32 ), ( this.y + 32 ), 3).attr({
@@ -120,7 +120,7 @@ Clock.prototype.create = function () {
 
     this.ticks = clock.circle((this.x + 31), (this.y + 31), 27).attr({
         fill: "#fff",
-        stroke: '#333',
+//        stroke: '#333', //Hour Indicators
         strokeWidth: 3,
         strokeDasharray: '2, 12'
     });
@@ -156,8 +156,8 @@ ClockGroup.prototype.create = function() {
         for ( b = 0; b < 3; b++) {
             x = [];
 
-            x[0] = n + (a*65);
-            x[1] = b*65;
+            x[0] = n + (a*60);
+            x[1] = b*60;
 
             this.groups.push( new Clock( this.svg, x) );
         }
